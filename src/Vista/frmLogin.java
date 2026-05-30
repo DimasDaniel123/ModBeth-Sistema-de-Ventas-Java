@@ -63,10 +63,16 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Gotham Thin", 0, 40)); // NOI18N
         jLabel3.setText("INICIAR SESIÓN");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clave.png"))); // NOI18N
+        javax.swing.ImageIcon claveIcon = ImageLoader.loadImage("/Imagenes/clave.png", "src/Imagenes/clave.png");
+        if (claveIcon != null) {
+            jLabel8.setIcon(claveIcon); // NOI18N
+        }
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/correo.png"))); // NOI18N
+        javax.swing.ImageIcon correoIcon = ImageLoader.loadImage("/Imagenes/correo.png", "src/Imagenes/correo.png");
+        if (correoIcon != null) {
+            jLabel5.setIcon(correoIcon); // NOI18N
+        }
 
         txtPass.setBackground(new java.awt.Color(255, 204, 204));
         txtPass.setBorder(null);
@@ -149,7 +155,10 @@ public class frmLogin extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/logo.jpg"))); // NOI18N
+        javax.swing.ImageIcon logoIcon = ImageLoader.loadImage("/Imagenes/logo.jpg", "src/Imagenes/logo.jpg");
+        if (logoIcon != null) {
+            jLabel1.setIcon(logoIcon); // NOI18N
+        }
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
